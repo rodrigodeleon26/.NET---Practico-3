@@ -10,7 +10,7 @@ Console.WriteLine("Bienvenido a mi primera app .NET!!!");
 
 do
 {
-    Console.WriteLine("Ingrese comando (NUEVA/IMPRIMIR/EXIT): ");
+    Console.WriteLine("Ingrese comando (NUEVA/IMPRIMIR/ACTUALIZAR/BORRAR/EXIT): ");
 
     try
     {
