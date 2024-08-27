@@ -14,13 +14,14 @@ namespace DAL.DALs
 
         private List<Persona> personas = new List<Persona>
         {
-            new Persona { Id = 1, Nombre = "Juan", Documento = "1234567" },
-            new Persona { Id = 2, Nombre = "Ana", Documento = "7654321" },
-            new Persona { Id = 3, Nombre = "Pedro", Documento = "1234567" },
-            new Persona { Id = 4, Nombre = "Maria", Documento = "7654321" },
-            new Persona { Id = 5, Nombre = "Carlos", Documento = "1234567" },
-            new Persona { Id = 6, Nombre = "Lucia", Documento = "7654321" },
-            new Persona { Id = 7, Nombre = "Jose", Documento = "1234567" },
+            new Persona { Id = 1, Documento = "1234567", Nombres = "Juan", Apellidos = "Perez", Telefono = "1234567", Direccion = "Calle 123", FechaDeNacimiento = new DateOnly(1990, 1, 1) },
+            new Persona { Id = 2, Documento = "7654321", Nombres = "Maria", Apellidos = "Lopez", Telefono = "7654321", Direccion = "Calle 321", FechaDeNacimiento = new DateOnly(1995, 1, 1) },
+            new Persona { Id = 3, Documento = "1234567", Nombres = "Pedro", Apellidos = "Gomez", Telefono = "1234567", Direccion = "Calle 123", FechaDeNacimiento = new DateOnly(1990, 1, 1) },
+            new Persona { Id = 4, Documento = "7654321", Nombres = "Ana", Apellidos = "Garcia", Telefono = "7654321", Direccion = "Calle 321", FechaDeNacimiento = new DateOnly(1995, 1, 1) },
+            new Persona { Id = 5, Documento = "1234567", Nombres = "Carlos", Apellidos = "Martinez", Telefono = "1234567", Direccion = "Calle 123", FechaDeNacimiento = new DateOnly(1990, 1, 1) },
+            new Persona { Id = 6, Documento = "7654321", Nombres = "Laura", Apellidos = "Rodriguez", Telefono = "7654321", Direccion = "Calle 321", FechaDeNacimiento = new DateOnly(1995, 1, 1) },
+            new Persona { Id = 7, Documento = "1234567", Nombres = "Jorge", Apellidos = "Hernandez", Telefono = "1234567", Direccion = "Calle 123", FechaDeNacimiento = new DateOnly(1990, 1, 1) }
+
         };
 
         public void AddPersona(Persona persona)
@@ -48,8 +49,12 @@ namespace DAL.DALs
         public void UpdatePersona(Persona persona)
         {
             Persona p = personas.FirstOrDefault(p => p.Id == persona.Id);
-            p.Nombre = persona.Nombre;
             p.Documento = persona.Documento;
+            p.Nombres = persona.Nombres;
+            p.Apellidos = persona.Apellidos;
+            p.Telefono = persona.Telefono;
+            p.Direccion = persona.Direccion;
+            p.FechaDeNacimiento = persona.FechaDeNacimiento;
         }
     }
 }
