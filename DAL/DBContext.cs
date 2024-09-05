@@ -1,12 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using DAL.Models;
+﻿using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL
 {
     public class DBContext : DbContext
     {
-        private string connectionString = "Data Source=Rodrigo\\SQLEXPRESS;Initial Catalog=PERSONAS;" +
-                                          "Persist Security Info=True;User ID=sa;Password=1234;Encrypt=False";
+        private string _connectionString = "Server=sqlserver,1433;Database=PRACTICO4; User Id=sa; Password=Abc*123!;Encrypt=False;";
 
         public DBContext() { }
 
@@ -14,7 +13,7 @@ namespace DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlServer(_connectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -25,5 +24,15 @@ namespace DAL
         public DbSet<Personas> Personas { get; set; }
 
         public DbSet<Vehiculos> Vehiculos { get; set; }
+
+        public static void UpdateDatabase()
+        {
+            using (var context = new DBContext())
+            {
+                context?.Database.Migrate();
+            }
+            Console.WriteLine("Base de datos actualizada.");
+        }
     }
 }
+

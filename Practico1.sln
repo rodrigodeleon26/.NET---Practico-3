@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practico1", "Practico1\Prac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{7F37406A-05C0-48A6-8486-C7E46E26E5CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F8E42236-6825-4BD7-B8C9-8B3512094EC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{F8E42236-6825-4BD7-B8C9-8B3512094EC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{B8BDFA52-5161-4CCD-8F4D-B5BA14B09272}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6EBF13A2-7483-4C3C-90E5-DA914430B0F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{F8E42236-6825-4BD7-B8C9-8B3512094EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8E42236-6825-4BD7-B8C9-8B3512094EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8E42236-6825-4BD7-B8C9-8B3512094EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8BDFA52-5161-4CCD-8F4D-B5BA14B09272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BDFA52-5161-4CCD-8F4D-B5BA14B09272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BDFA52-5161-4CCD-8F4D-B5BA14B09272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BDFA52-5161-4CCD-8F4D-B5BA14B09272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBF13A2-7483-4C3C-90E5-DA914430B0F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBF13A2-7483-4C3C-90E5-DA914430B0F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBF13A2-7483-4C3C-90E5-DA914430B0F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBF13A2-7483-4C3C-90E5-DA914430B0F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

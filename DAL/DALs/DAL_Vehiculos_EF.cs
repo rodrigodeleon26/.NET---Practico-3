@@ -10,12 +10,12 @@ namespace DAL.DALs
 {
     public class DAL_Vehiculos_EF : IDAL_Vehiculos
     {
-        private DBContext _dbContext;
+        //private DBContext _dbContext;
 
-        public DAL_Vehiculos_EF(DBContext dbContext)
-        {
-            _dbContext = dbContext;
-        }
+        //public DAL_Vehiculos_EF(DBContext dbContext)
+        //{
+        //    _dbContext = dbContext;
+        //}
 
         public void AddVehiculo(Vehiculo vehiculo)
         {
